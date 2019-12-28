@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+@font-face
+{
+    font-family: "SourceSansProLight";
+    src: url("./fonts/SourceSansPro-Light.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face
+{
+    font-family: "SourceSansPro";
+    src: url("./fonts/SourceSansPro-Regular.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face
+{
+    font-family: "Javatext";
+    src: url("./fonts/javatext.ttf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #232328;
+    color: #FFF6F0;
+    overflow-x: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.strike
+{
+    text-decoration: line-through;
+}
+
+#header
+{
+    top: 0;
+    width: 90vw;
+    margin: auto;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#title
+{
+    font-family: "Javatext", serif;
+    font-size: 64px;
+    color: #FFAC6D;
+    display: inline;
+}
+
+#links
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#links li
+{
+    display: inline;
+    padding-right: 48px;
+    font-size: 32px;
+}
+
+#main
+{
+    font-family: "SourceSansProLight";
+}
+
+#who
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media only screen and (min-width: 1001px)
+{
+    #who .content
+    {
+        position: relative;
+        top: 36vh;
+        width: 54vw;
+        margin-left: 32vw;
+    }    
+}
+
+#who h1
+{
+    font-family: "SourceSansPro";
+    font-size: 80px;
+    display: inline;
+}
+
+#who p
+{
+    position: relative;
+    left: 10vw;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    #header
+    {
+        justify-content: center;
+    }
+
+    #title
+    {
+        text-align: center;
+    }
+
+    #links
+    {
+        display: none;
+    }
+
+    #who
+    {
+        top: 20vh;
+        width: 80vw;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+
+    #who h1
+    {
+        font-size: 48px;
+    }
+
+    #who p
+    {
+        position: static;
+    }
 }
