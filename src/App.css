@@ -25,6 +25,17 @@ body
     overflow-x: hidden;
 }
 
+a
+{
+    text-decoration: none;
+    color: #f7c8a8;
+}
+
+a:active
+{
+    color: #fca063;
+}
+
 h1,h2,h3,h4,h5,h6
 {
     font-weight: normal;
@@ -37,6 +48,8 @@ h1,h2,h3,h4,h5,h6
 
 #header
 {
+    position: fixed;
+    z-index: 10000;
     top: 0;
     width: 90vw;
     margin: auto;
@@ -78,6 +91,7 @@ h1,h2,h3,h4,h5,h6
 #who
 {
     position: absolute;
+    z-index: 10;
     top: 0;
     left: 0;
 }

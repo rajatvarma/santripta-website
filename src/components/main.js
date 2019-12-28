@@ -10,7 +10,7 @@ class main extends React.Component
                 <div className = "content">
                     <h1>Hello, I'm Santript<span className="strike">a</span></h1>
                     <br></br>
-                        <p>a 16-year old developer, inept designer and tech enthusiast<br></br><br></br>i enjoy indie games<br></br>i like impromptu debates<br></br>i partake in procrastination</p>
+                        <p>a 16-year old developer, inept designer and tech enthusiast<br></br><br></br>i enjoy indie games<br></br>i like impromptu debates<br></br>i partake in procrastination<br></br><br></br>i also &hearts; <a href = "https://shubhro.in" target = "_blank" rel = "noopener noreferrer">shubhro</a></p>
                 </div>
             </div>
         </div>
