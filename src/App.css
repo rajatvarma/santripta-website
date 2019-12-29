@@ -126,7 +126,9 @@ h1,h2,h3,h4,h5,h6
 {
     #header
     {
+        position: absolute;
         justify-content: center;
+        margin-top: -60px;
     }
 
     #title
@@ -141,6 +143,7 @@ h1,h2,h3,h4,h5,h6
 
     #who
     {
+        margin-top: 10px;
         top: 20vh;
         width: 80vw;
         left: 50%;
