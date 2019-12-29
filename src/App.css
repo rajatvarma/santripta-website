@@ -143,11 +143,13 @@ h1,h2,h3,h4,h5,h6
 
     #who
     {
-        margin-top: 10px;
-        top: 20vh;
-        width: 80vw;
-        left: 50%;
-        transform: translate(-50%,0);
+        position: static;
+        padding-top: 10px;
+        margin: auto;
+        margin-top: 20vh;
+        width: 60vw;
+        flex-direction: row;
+        justify-items: center;
     }
 
     #who h1
